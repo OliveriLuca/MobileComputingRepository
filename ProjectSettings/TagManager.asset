@@ -38,6 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: sfondo
+    uniqueID: 2270876665
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: pavimento
+    uniqueID: 2445153211
+    locked: 0
+  - name: personaggio
+    uniqueID: 4274102063
     locked: 0
