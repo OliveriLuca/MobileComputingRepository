@@ -47,6 +47,9 @@ TagManager:
   - name: pavimento
     uniqueID: 2445153211
     locked: 0
+  - name: muri&piattaforme
+    uniqueID: 164654373
+    locked: 0
   - name: personaggio
     uniqueID: 4274102063
     locked: 0

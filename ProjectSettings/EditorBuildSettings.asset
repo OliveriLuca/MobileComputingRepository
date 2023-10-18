@@ -27,6 +27,12 @@ EditorBuildSettings:
     path: Assets/Scene/livelli battaglia/Livello 1 B.unity
     guid: 6e7ca070643174635b2cf07036013676
   - enabled: 1
+    path: Assets/Scene/livelli battaglia/Livello 2 B.unity
+    guid: 1660bcee95dfa461f81bfddac7e9e16e
+  - enabled: 1
+    path: Assets/Scene/livelli battaglia/Livello 3 B.unity
+    guid: c50082383963e407db99f881fff1411c
+  - enabled: 1
     path: Assets/Scene/schermate servizio/End.unity
     guid: 9cd6d8f61ebf948b9961e6d0de29b5b4
   m_configObjects: {}
