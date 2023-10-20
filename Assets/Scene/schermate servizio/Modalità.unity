@@ -514,7 +514,7 @@ GameObject:
   - component: {fileID: 734235142}
   - component: {fileID: 734235141}
   m_Layer: 5
-  m_Name: SCRITTA_ROMPICAPO
+  m_Name: Scritta_Rompicapo_easy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -572,7 +572,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ROMPICAPO
+  m_Text: Easy
 --- !u!222 &734235142
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1034,7 +1034,7 @@ GameObject:
   - component: {fileID: 1426815109}
   - component: {fileID: 1426815108}
   m_Layer: 5
-  m_Name: SCRITTA_BATTAGLIA
+  m_Name: Scritta_Rompicapo_hard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1092,7 +1092,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BATTAGLIA
+  m_Text: Hard
 --- !u!222 &1426815109
 CanvasRenderer:
   m_ObjectHideFlags: 0
