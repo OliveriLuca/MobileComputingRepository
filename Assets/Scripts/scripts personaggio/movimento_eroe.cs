@@ -8,7 +8,14 @@ public class movimento_eroe : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private SpriteRenderer sprite;
-    
+
+
+    private float dirx = 0f;
+    [SerializeField] private float velocita_spostamento = 5f;
+    [SerializeField] private float forza_salto = 9f;
+
+    private enum MovementState { attesa, run, salto, caduta}
+    private MovementState stato = MovementState.attesa;
 
     // Start is called before the first frame update
     private void Start()
@@ -21,27 +28,47 @@ public class movimento_eroe : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        float dirx = Input.GetAxisRaw("orizzontale");
-        rb.velocity = new Vector2(dirx * 5f,rb.velocity.y);
+         dirx = Input.GetAxisRaw("orizzontale");
+        rb.velocity = new Vector2(dirx * velocita_spostamento,rb.velocity.y);
+
 
         if (Input.GetButtonDown("Salto"))
         {
-            rb.velocity = new Vector2(rb.velocity.x,9f);
+            rb.velocity = new Vector2(rb.velocity.x, forza_salto);
         }
+
+        UpdateAnimationState();
+    }
+
+    private void UpdateAnimationState()
+    {
+        MovementState stato;
         
         if (dirx > 0f)
         {
-            anim.SetBool("run", true);
+            stato = MovementState.run; 
             sprite.flipX = false;
         }
-        else if(dirx < 0f)
+        else if (dirx < 0f)
         {
-            anim.SetBool("run", true);
+            stato = MovementState.run;
             sprite.flipX = true;
         }
         else
         {
-            anim.SetBool("run", false);
+            stato = MovementState.attesa;
         }
+
+        if(rb.velocity.y > .1f)
+        {
+            stato = MovementState.salto;
+        }
+
+        else if(rb.velocity.y < -.1f)
+        {
+            stato = MovementState.caduta;
+        }
+
+        anim.SetInteger("stato", (int)stato);
     }
 }

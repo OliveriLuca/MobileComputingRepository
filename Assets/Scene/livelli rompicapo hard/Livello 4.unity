@@ -4253,7 +4253,6 @@ GameObject:
   - component: {fileID: 1166821453}
   - component: {fileID: 1166821455}
   - component: {fileID: 1166821454}
-  - component: {fileID: 1166821459}
   - component: {fileID: 1166821458}
   - component: {fileID: 1166821461}
   - component: {fileID: 1166821460}
@@ -4518,25 +4517,6 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
---- !u!251 &1166821459
-PlatformEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1166821452}
-  m_Enabled: 0
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RotationalOffset: 0
-  m_UseOneWay: 1
-  m_UseOneWayGrouping: 0
-  m_SurfaceArc: 180
-  m_UseSideFriction: 0
-  m_UseSideBounce: 0
-  m_SideArc: 1
 --- !u!66 &1166821460
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -4706,6 +4686,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d536cee3614e4be29af134fd08f6630, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocita_spostamento: 5
+  forza_salto: 9
 --- !u!50 &1649042668
 Rigidbody2D:
   serializedVersion: 4
