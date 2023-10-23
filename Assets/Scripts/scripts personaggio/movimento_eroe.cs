@@ -32,12 +32,12 @@ public class movimento_eroe : MonoBehaviour
         if (dirx > 0f)
         {
             anim.SetBool("run", true);
-            sprite.flipX = true;
+            sprite.flipX = false;
         }
         else if(dirx < 0f)
         {
             anim.SetBool("run", true);
-            sprite.flipX = false;
+            sprite.flipX = true;
         }
         else
         {
