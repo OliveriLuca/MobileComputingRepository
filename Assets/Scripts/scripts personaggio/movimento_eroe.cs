@@ -26,9 +26,9 @@ public class movimento_eroe : MonoBehaviour
 
         if (Input.GetButtonDown("Salto"))
         {
-            rb.velocity = new Vector2(rb.velocity.x,8f);
+            rb.velocity = new Vector2(rb.velocity.x,9f);
         }
-
+        
         if (dirx > 0f)
         {
             anim.SetBool("run", true);
