@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 428664571}
   - component: {fileID: 428664570}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: gruppo_pausa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
