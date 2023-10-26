@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - traps
+  - personaggio
   layers:
   - Default
   - TransparentFX
