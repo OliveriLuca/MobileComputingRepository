@@ -27,4 +27,14 @@ public class menu_pausa : MonoBehaviour
     {
         SceneManager.LoadScene("Modalità");
     }
+
+    public void Mute()
+    {
+        AudioListener.volume = 0;
+    }
+
+    public void Volume()
+    {
+        AudioListener.volume = 1;
+    }
 }
