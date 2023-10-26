@@ -36,4 +36,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/schermate servizio/End.unity
     guid: 9cd6d8f61ebf948b9961e6d0de29b5b4
+  - enabled: 1
+    path: Assets/Scene/leader_board.unity
+    guid: be8de5f00c4af40299d7405100c265c3
   m_configObjects: {}

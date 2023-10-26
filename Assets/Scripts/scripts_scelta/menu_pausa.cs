@@ -6,16 +6,20 @@ using UnityEngine.SceneManagement;
 public class menu_pausa : MonoBehaviour
 {
     [SerializeField] GameObject Menu_pausa;
+    [SerializeField] GameObject Selezione_livelli;
 
     public void Pausa()
     {
         Menu_pausa.SetActive(true);
+        Time.timeScale = 0;
     }
 
 
     public void Play()
     {
         Menu_pausa.SetActive(false);
+        Time.timeScale = 1;
+
     }
 
     public void Exit()
@@ -38,5 +42,10 @@ public class menu_pausa : MonoBehaviour
         AudioListener.volume = 1;
     }
 
+
+    public void Leader_Board()
+    {
+        SceneManager.LoadScene("leader_board");
+    }
 
 }
