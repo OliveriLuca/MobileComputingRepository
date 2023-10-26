@@ -7,7 +7,10 @@ public class movimento_eroe : MonoBehaviour
 
     private Rigidbody2D rb;
     private Animator anim;
+    private BoxCollider2D coll;
     private SpriteRenderer sprite;
+
+    [SerializeField] private LayerMask terreno_saltabile;
 
 
     private float dirx = 0f;
@@ -21,6 +24,7 @@ public class movimento_eroe : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>(); //nella variabile salvo il richiamo a rigidbody2D
+        coll = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>(); //nella variabile salvo la chiamata a animator
         sprite = GetComponent<SpriteRenderer>();
     }
@@ -32,7 +36,7 @@ public class movimento_eroe : MonoBehaviour
         rb.velocity = new Vector2(dirx * velocita_spostamento,rb.velocity.y);
 
 
-        if (Input.GetButtonDown("Salto"))
+        if (Input.GetButtonDown("Salto") && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, forza_salto);
         }
@@ -70,5 +74,10 @@ public class movimento_eroe : MonoBehaviour
         }
 
         anim.SetInteger("stato", (int)stato);
+    }
+
+    private bool IsGrounded()
+    {
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, terreno_saltabile);
     }
 }
