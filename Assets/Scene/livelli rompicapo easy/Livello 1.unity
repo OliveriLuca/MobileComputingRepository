@@ -7810,9 +7810,9 @@ GameObject:
   - component: {fileID: 2053543050}
   - component: {fileID: 2053543049}
   - component: {fileID: 2053543048}
-  - component: {fileID: 2053543047}
   - component: {fileID: 2053543046}
   - component: {fileID: 2053543051}
+  - component: {fileID: 2053543052}
   m_Layer: 0
   m_Name: Personaggio
   m_TagString: Untagged
@@ -7865,23 +7865,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8452668, y: 1.277803}
   m_EdgeRadius: 0
---- !u!114 &2053543047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2053543045}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d536cee3614e4be29af134fd08f6630, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  terreno_saltabile:
-    serializedVersion: 2
-    m_Bits: 64
-  velocita_spostamento: 5
-  forza_salto: 9
 --- !u!50 &2053543048
 Rigidbody2D:
   serializedVersion: 4
@@ -7984,7 +7967,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2053543045}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: ee22f13971d0f42d0b46336beb0b4a1b, type: 2}
   m_CullingMode: 0
@@ -7997,6 +7980,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2053543052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053543045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68ef3a2c060da53438bd4615d817b181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 400
+  playerRB: {fileID: 2053543048}
 --- !u!1 &2083332276
 GameObject:
   m_ObjectHideFlags: 0
