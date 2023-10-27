@@ -8305,7 +8305,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   velocita_spostamento: 5
-  forza_salto: 9
+  forza_salto: 6
 --- !u!50 &2053543048
 Rigidbody2D:
   serializedVersion: 4
