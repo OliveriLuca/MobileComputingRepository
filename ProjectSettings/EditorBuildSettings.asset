@@ -9,34 +9,34 @@ EditorBuildSettings:
     path: Assets/personaggi/Pixel Art Icon Pack - RPG/Scene/SC Pixel Art Icon Pack
       - RPG.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/schermate servizio/Start.unity
     guid: 24ac1e17735154043a8b64684a8c4bef
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scene/schermate servizio/Modalit\xE0.unity"
     guid: 4714fad87c296469d9aece22fdf7009c
   - enabled: 1
     path: Assets/Scene/livelli rompicapo easy/Livello 1.unity
     guid: 987ae9ae0316741e29c7e7ba70465916
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/livelli rompicapo easy/Livello 2.unity
     guid: 528044e4e5a5247c0b639fe400a927d1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/Scena Graal.unity
     guid: 4f6533800096749288bd7a2812ac4268
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/livelli rompicapo hard/Livello 4.unity
     guid: 6e7ca070643174635b2cf07036013676
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/livelli rompicapo hard/Livello 5.unity
     guid: 1660bcee95dfa461f81bfddac7e9e16e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/livelli rompicapo hard/Livello 6.unity
     guid: c50082383963e407db99f881fff1411c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/schermate servizio/End.unity
     guid: 9cd6d8f61ebf948b9961e6d0de29b5b4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/leader_board.unity
     guid: be8de5f00c4af40299d7405100c265c3
   m_configObjects: {}
