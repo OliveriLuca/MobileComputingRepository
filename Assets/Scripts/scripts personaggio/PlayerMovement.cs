@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 5;
     bool isGrounded;
 
-    int numberOfJumps = 0;
+    int numberOfJumps = 0; // 0
 
     public Transform groundCheck;
 
@@ -67,14 +67,15 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isGrounded)
         {
-            numberOfJumps = 0;
+            //numberOfJumps = 0;
             playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
             numberOfJumps++;
         }
         else
         {
-            if(numberOfJumps == 1)
+            if(numberOfJumps == 1)  //numberOfJumps == 1
             {
+                //numberOfJumps = 1;
                 playerRB.velocity = new Vector2(playerRB.velocity.x, jumpForce);
                 numberOfJumps++;
             }
