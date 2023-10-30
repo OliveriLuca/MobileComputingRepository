@@ -6011,7 +6011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 200
-  jumpForce: 6
+  jumpForce: 8
   groundCheck: {fileID: 1102578725}
   groundLayer:
     serializedVersion: 2
