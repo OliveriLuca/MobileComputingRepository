@@ -6,6 +6,7 @@ using PlayFab;
 using PlayFab.ClientModels;
 using System;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Login : MonoBehaviour
 {
@@ -58,21 +59,59 @@ public class Login : MonoBehaviour
     }
 
 
-    private void Login_button()
+    public void login_button()
     {
         var request = new LoginWithEmailAddressRequest
         {
             Email = EmailLoginInput.text,
             Password = PasswordLoginInput.text,
+
+            InfoRequestParameters = new GetPlayerCombinedInfoRequestParams
+            {
+                GetPlayerProfile = true
+            }
         };
-        PlayFabClientAPI.LoginWithEmailAddress(request, OnloginSucces, OnError);
+        PlayFabClientAPI.LoginWithEmailAddress(request, OnloginSucces, OnErrorLog);
+    }
+
+    private void OnErrorLog(PlayFabError result)
+    {
+        TopText.text = "Incorrect password or email";
     }
 
     private void OnloginSucces(LoginResult result)
     {
-        TopText.text = "Loggin in";
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        string name = null;
 
+        if(result.InfoResultPayload != null)
+        {
+            name = result.InfoResultPayload.PlayerProfile.DisplayName;
+        }
+
+        TopText.text = "Welcome " + name;
+        StartCoroutine(LoadNextScene());
+    }
+
+    public void RecoverUser()
+    {
+        var request = new SendAccountRecoveryEmailRequest
+        {
+            Email = EmailRecoveryInput.text,
+            TitleId = "8634C",
+        };
+
+        PlayFabClientAPI.SendAccountRecoveryEmail(request, OnRecoverySucces, OnErrorRecovery);
+    }
+
+    private void OnErrorRecovery(PlayFabError result)
+    {
+        TopText.text = "No Mail Found";
+    }
+
+    private void OnRecoverySucces(SendAccountRecoveryEmailResult obj)
+    {
+        OpenLoginPage();
+        TopText.text = "Recovery Mail Sent";
     }
 
     private void OnError(PlayFabError Error)
@@ -116,4 +155,11 @@ public class Login : MonoBehaviour
     }
 
     #endregion
+
+    IEnumerator LoadNextScene()
+    {
+        yield return new WaitForSeconds(2);
+        //TopText.text = "Loggin in";
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }

@@ -687,7 +687,7 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: ENABLE_PLAYFABADMIN_API;ENABLE_PLAYFABSERVER_API;PLAYFAB_REQUEST_TIMING
+    Android: ENABLE_PLAYFABADMIN_API;ENABLE_PLAYFABSERVER_API
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
