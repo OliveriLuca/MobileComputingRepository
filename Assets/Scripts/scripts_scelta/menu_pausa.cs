@@ -43,9 +43,10 @@ public class menu_pausa : MonoBehaviour
     }
 
 
-    public void Leader_Board()
+    public void Restart_level()
     {
-        SceneManager.LoadScene("leader_board");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1;
     }
 
 }
