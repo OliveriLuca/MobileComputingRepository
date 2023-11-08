@@ -21,7 +21,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/livelli rompicapo easy/Livello 1.unity
     guid: 987ae9ae0316741e29c7e7ba70465916
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/livelli rompicapo easy/Livello 2.unity
     guid: 528044e4e5a5247c0b639fe400a927d1
   - enabled: 0
