@@ -1541,6 +1541,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25126c6cf65ce479abd91501e0b87a58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  oggetto: {fileID: 2053543045}
+  tempo: 0.5
 --- !u!1 &348223002
 GameObject:
   m_ObjectHideFlags: 0
@@ -7888,7 +7890,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 0
@@ -7899,7 +7901,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: use force not key
+  m_Text: use force not the key
 --- !u!222 &1793088348
 CanvasRenderer:
   m_ObjectHideFlags: 0

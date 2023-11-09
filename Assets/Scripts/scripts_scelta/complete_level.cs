@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class complete_level : MonoBehaviour
 {
+    [SerializeField] GameObject oggetto;
+    [SerializeField] float tempo;
     private bool livelloCompletato = false;
 
     // Start is called before the first frame update
@@ -15,10 +17,10 @@ public class complete_level : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.name == "Personaggio")
+        if(collision.gameObject == oggetto)
         {
             livelloCompletato = true;
-            Invoke("livello_successivo", 0.5f);
+            Invoke("livello_successivo", tempo);
         }
     }
 
