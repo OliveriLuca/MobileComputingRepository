@@ -27,12 +27,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/livelli rompicapo easy/Livello 3.unity
     guid: 2033d302cfe3f1340bfba8e4387ba9aa
+  - enabled: 1
+    path: Assets/Scene/livelli rompicapo hard/Livello 4.unity
+    guid: 6e7ca070643174635b2cf07036013676
   - enabled: 0
     path: Assets/Scene/Scena Graal.unity
     guid: 4f6533800096749288bd7a2812ac4268
-  - enabled: 0
-    path: Assets/Scene/livelli rompicapo hard/Livello 4.unity
-    guid: 6e7ca070643174635b2cf07036013676
   - enabled: 0
     path: Assets/Scene/livelli rompicapo hard/Livello 5.unity
     guid: 1660bcee95dfa461f81bfddac7e9e16e

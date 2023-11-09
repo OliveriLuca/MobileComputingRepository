@@ -535,6 +535,85 @@ MonoBehaviour:
   m_Spacing: {x: 35, y: 35}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!1 &415956972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 415956973}
+  - component: {fileID: 415956975}
+  - component: {fileID: 415956974}
+  m_Layer: 5
+  m_Name: suggerimento
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &415956973
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415956972}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 416172508}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -598.1295, y: 367.2129}
+  m_SizeDelta: {x: 361.259, y: 64.4258}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &415956974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415956972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 40
+    m_FontStyle: 3
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: find the lever !
+--- !u!222 &415956975
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415956972}
+  m_CullTransparentMesh: 1
 --- !u!1 &416172504
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,6 +711,7 @@ RectTransform:
   - {fileID: 276241001}
   - {fileID: 899933637}
   - {fileID: 1758757439}
+  - {fileID: 415956973}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1075,8 +1155,8 @@ Transform:
   m_GameObject: {fileID: 474587613}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.746978, y: 2.8457782, z: 0.18220887}
-  m_LocalScale: {x: 1.3617736, y: 1.3127785, z: 1}
+  m_LocalPosition: {x: 5.9016, y: 2.5927, z: 0.18220887}
+  m_LocalScale: {x: 1.212387, y: 1.129307, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1357661882}
@@ -2854,8 +2934,8 @@ GameObject:
   m_Component:
   - component: {fileID: 762359330}
   - component: {fileID: 762359333}
-  - component: {fileID: 762359332}
   - component: {fileID: 762359331}
+  - component: {fileID: 762359334}
   m_Layer: 0
   m_Name: leva
   m_TagString: Untagged
@@ -2923,21 +3003,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.41591963, y: 0.7708333}
   m_EdgeRadius: 0
---- !u!114 &762359332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 762359329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f518644bd7d94b9dbcfff5d41eb0bc2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  personaggio: {fileID: 1832044829}
-  animazione_base: {fileID: 762359329}
-  animazione_attiva: {fileID: 857177620}
 --- !u!212 &762359333
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2980,7 +3045,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300022, guid: ae3918a914038694d852d0bb81f62473, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.23529412}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.15686275}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2990,6 +3055,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &762359334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762359329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b61805836fd3c4c09a7d37e21d730cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  porta: {fileID: 474587613}
+  porta_aperta: {fileID: 1645636640}
+  animazione_base: {fileID: 762359329}
+  animazione_attiva: {fileID: 857177620}
 --- !u!1 &790282996
 GameObject:
   m_ObjectHideFlags: 0
@@ -6510,6 +6591,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1645636642}
   - component: {fileID: 1645636641}
+  - component: {fileID: 1645636644}
+  - component: {fileID: 1645636643}
   m_Layer: 0
   m_Name: porta (1)
   m_TagString: Untagged
@@ -6555,8 +6638,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 164654373
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e325ebaeb2e2577419c08fa5093cbcc5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6578,12 +6661,71 @@ Transform:
   m_GameObject: {fileID: 1645636640}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.8669777, y: 2.4857783, z: 0.18220887}
-  m_LocalScale: {x: 1.3617736, y: 1.3127785, z: 1}
+  m_LocalPosition: {x: 6.1201, y: 2.1483, z: 0.18220887}
+  m_LocalScale: {x: 1.1263229, y: 1.12, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1357661882}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1645636643
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645636640}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.15, y: 3.29}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.15, y: 3.29}
+  m_EdgeRadius: 0
+--- !u!114 &1645636644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645636640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25126c6cf65ce479abd91501e0b87a58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oggetto: {fileID: 1832044829}
+  tempo: 0.3
 --- !u!1 &1675989524
 GameObject:
   m_ObjectHideFlags: 0
@@ -6796,7 +6938,7 @@ Transform:
   m_GameObject: {fileID: 1733040567}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.525483, y: 2.2668736, z: 9.841042}
+  m_LocalPosition: {x: -8.3, y: 2.2668736, z: 9.841042}
   m_LocalScale: {x: 1.4156246, y: 1.3600662, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
