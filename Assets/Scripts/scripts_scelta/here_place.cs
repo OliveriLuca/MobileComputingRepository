@@ -7,24 +7,35 @@ public class here_place : MonoBehaviour
 {
     [SerializeField] GameObject oggetto;
     [SerializeField] float tempo;
-    [SerializeField] int tempo_fermo;
+    [SerializeField] float tempo_fermo;
     private bool livelloCompletato = false;
-    int correct_point = 0;
+    private float correct_point = 0;
+
+
+
+    private void Update()
+    {
+       while( (oggetto.transform.position.x >= 3 && oggetto.transform.position.x <= 6) && (oggetto.transform.position.y >= 2 && oggetto.transform.position.y <= 2.5))
+        {
+            correct_point++;
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject == oggetto)
         {
+            Debug.Log("correct_point");
+
             if (correct_point == tempo_fermo )
             {
                 livelloCompletato = true;
                 Invoke("livello_successivo", tempo);
+                
+
             }
         }
-        else
-        {
-            correct_point = 0;
-        }
+        
 
     }
 
@@ -34,15 +45,7 @@ public class here_place : MonoBehaviour
     }
 
 
-    public void Update()
-    {
-       correct_point = 0;
+    
 
-        while ((oggetto.transform.position.x >=3 && oggetto.transform.position.x <= 6) && (oggetto.transform.position.y >= 2 && oggetto.transform.position.y <= 2.5))
-        {
-            correct_point++;
-        }
-    }
 
-   
 }

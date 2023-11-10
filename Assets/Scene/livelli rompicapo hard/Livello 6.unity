@@ -3356,7 +3356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   oggetto: {fileID: 624218748}
   tempo: 0.3
-  tempo_fermo: 20
+  tempo_fermo: 23
 --- !u!1 &567396851
 GameObject:
   m_ObjectHideFlags: 0
