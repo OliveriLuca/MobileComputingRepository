@@ -45,6 +45,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: luce
+    uniqueID: 647740815
+    locked: 0
   - name: muri&piattaforme
     uniqueID: 164654373
     locked: 0
