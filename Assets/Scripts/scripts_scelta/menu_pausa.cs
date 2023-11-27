@@ -30,6 +30,8 @@ public class menu_pausa : MonoBehaviour
     public void Home()
     {
         SceneManager.LoadScene("Modalità");
+        Time.timeScale = 1;
+
     }
 
     public void Mute()
